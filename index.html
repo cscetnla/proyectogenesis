@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="fila"> <!--Nombre a clase para invocarla es css para crear columanas debe existir una fila-->
+        <div class="contBotones"><!--Primera columna-->
+            <h2>INTERACCIONES</h2>
+            <button onclick="circulo()">CIRCULO</button>
+            <button onclick="rombo()">ROMBO</button>
+            <button onclick="triangulo()">TRIANGULO</button>
+            <button onclick="rectanguloh()">RECTANGULO H</button>
+            <button onclick="rectangulov()">RECTANGULO V</button>
+            <button onclick="abajo()">ABAJO</button>
+            <button onclick="diagonal()">DIAGONAL</button>
+            <button onclick="izquierda()">IZQUIERDA</button>
+            <button onclick="derecha()">DERECHA</button>
+            <button onclick="arriba()">ARRIBA</button>         
+            <button onclick="imagen()">IMAGEN</button>
+        </div>
+
+        <div class="contFigura"><!--segunda columna-->
+            <h2>FIGURA</h2>
+            <div id="figura"></div> 
+        </div>
+    </section>
+
+    <a class="btn-nav" href="capturarDatos.html">PROYECTO FIGURAS GEOMETRICAS</a>
+
+    <script src="js/function.js"></script>
+
+</body>
+</html>

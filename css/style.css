@@ -1,0 +1,267 @@
+*{/*Para quitar las margenes que vienen por defecto en css*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Pone la margen asia dentro para no superar el tamaño que se ha definido*/
+}
+
+:root{ /*Root se utiliza para crear variables con valores que sean repetitivos en el sitio web como colores tamaños margenes etc*/
+    --primary-color: #00fff2;
+    --secundary-color: #000;
+}
+
+.fila{ /*Invocar clases*/
+    display: flex;
+    width: 1200px;
+    margin: 50px auto;
+    border: 2px solid var(--secundary-color);
+}
+
+.fila .contBotones{
+    width: 50%;
+    background: var(--primary-color);
+    text-align: center; /*Centrar titulos*/
+    padding: 30px 20px;
+}
+
+.contBotones h2{
+    color: #0000008e;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contBotones button{
+    padding: 8px 10px;
+    background: #ffffff;
+    color: #0127ff;
+    border: 1px solid #0127ff;
+    border-radius: 20px;/*Borde redondeado*/
+    font-size: 20px;
+    margin: 12px;/*Espacio entre botones*/
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.contBotones button:hover{
+    background: #000000;
+    color: #ff0095e8;
+    border-color: #ff0095e8;
+    padding: 10px 12px;
+    font-size: 22px;
+}
+
+.fila .contFigura{
+    width: 50%;
+    text-align: center; 
+    background: #ff0095e8;
+    padding: 30px 20px;
+}
+
+.contFigura h2{
+    font-size: 40px;
+    color: #0000008e;
+}
+
+.contFigura #figura{
+    width: 180px;
+    height: 180px;
+    background: var(--secundary-color);
+    margin: 40px auto;
+    transition: 1s;
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);/*Rota al transformarse de una figura a otra, rota a la izquierda valor deg negativo y a la derecha valor deg positivo*/
+}
+
+#figura.rombo{
+    transform: rotate(45deg);
+    border-radius: 0%;
+}
+
+#figura.triangulo{
+    width: 0;
+    height: 0;
+    border-left: 100px solid #ff0095e8;
+    border-top: 100px solid var(--secundary-color);
+    border-right: 100px solid #ff0095e8;
+    border-bottom: 100px solid #ff0095e8;
+    transform: rotate(180deg)
+}
+/*overflow-heiden mantiene el elemento en el entorno padre*/
+
+#figura.rectanguloh{
+    width: 0;
+    height: 0;
+    border-left: 120px solid var(--secundary-color); 
+    border-top: 20px solid var(--secundary-color);
+    border-right: 120px solid var(--secundary-color);
+    border-bottom: 50px solid var(--secundary-color);
+}
+
+#figura.rectangulov{
+    width: 0;
+    height: 0;
+    border-left: 50px solid var(--secundary-color); 
+    border-top: 120px solid var(--secundary-color);
+    border-right: 50px solid var(--secundary-color);
+    border-bottom: 120px solid var(--secundary-color);
+}
+
+#figura.arriba{
+    transform: translatey(-100px);
+}
+
+#figura.abajo{
+    transform: translatey(100px);
+}
+
+#figura.derecha{
+    transform: translatex(100px);
+}
+
+#figura.izquierda{
+    transform: translatex(-100px);
+}
+
+#figura.diagonal{
+    transform: translate(100px, -100px);
+}
+
+#figura.imagen{
+    background: url("../img/matrix.gif");
+}
+
+
+/*CSS Avatar:*/
+body#captura{
+    background: #00f7ff;
+}
+
+.fila .contForm{
+    width: 50%;
+    background: #007bff;
+    color: black;
+    text-align: center;
+    padding: 40px;
+}
+
+.fila .contForm{
+    font-size: 30px;
+}
+
+.fila .contForm{
+    font-size: 24px;
+}
+
+.contForm form .formGroup{
+    padding: 10px 50px;
+    text-align: left;
+}
+
+form .formGroup label{
+    display: block;
+    font-size: 20px;
+}
+
+form .formGroup input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+form .formGroup select{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+form .formGroup textarea{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+button{
+    background: #d300fd;
+    font-size: 15px;
+    padding: 10px 15px;
+    color: #000000;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 20px;
+    border-color: #00f7ff;
+}
+
+button:hover{
+    padding: 12px 17px;
+    font-size: 17px;
+}
+
+form{
+    margin-top: 40px;
+}
+
+
+.fila .contAvatar{
+    text-align: center;
+    padding: 40px;
+    background: #EFEFEF;
+    width: 50%;
+}
+
+.fila .contAvatar img{/*Cambiar tamaño de imagen*/
+    width: 300px;
+}
+
+.fila .contAvatar h3{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.fila .contAvatar p{
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+.contAvatar.Negro{
+    background: #000000;
+}
+
+.contAvatar.Negro h3{
+    color: #ffffff;
+}
+
+.contAvatar.Negro p{
+    color: #ffffff
+}
+
+.contAvatar.Rojo{
+    background: #ff0000;
+}
+
+.contAvatar.Morado{
+    background: #ff00ee;
+}
+
+.contAvatar.Naranja{
+    background: #ff6f00;
+}
+
+.contAvatar.Violeta{
+    background: violet;
+}
+
+.btn-nav{
+    position: fixed;
+    bottom: 8px;
+    right: 76px;
+    background: #007bff;
+    color: #ffffff;
+    padding: 12px 40px;
+    text-decoration: none;
+}

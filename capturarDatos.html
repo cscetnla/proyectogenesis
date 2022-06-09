@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="captura">
+    
+    <section class="fila">
+        <div class="contForm">
+            <h2>REGISTRAR INFORMACION AVATAR</h2>
+            <p>Por favor complete los campos para generar su avatar.</p>
+            <form action="#"><!--For etiqueta de formulario-->
+                <div class="formGroup">
+                    <label for="nombres">Nombres:</label><!--Titulo-->
+                    <input type="text" id="nombres" placeholder="Ej: Cristian Tovar" required><!--Campo texto fantasma el placeholder-->
+                </div>
+                <div class="formGroup">
+                    <label for="edad">Edad:</label><!--Titulo-->
+                    <input type="text" id="edad" placeholder="Ej: 24" required><!--Campo-->
+                </div>
+                <div class="formGroup">
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label><!--Titulo-->
+                    <input type="date" id="fecha"><!--Campo-->
+                </div>
+                <div class="formGroup">
+                    <label for="genero">Genero:</label><!--Titulo-->
+                    <select name="#" id="genero"><!--Para barra desplegable de opciones-->
+                        <option value="">Seleccion...</option><!--value es lo que se guarda en la base de datos y dentro del option es la opcion que elige el usuario-->
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otros">Otro</option>
+                    </select><!--Campo-->
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email:</label><!--Titulo-->
+                    <input type="email" id="email" placeholder="Ej: cctt@hotmail.com" required><!--Campo-->
+                </div>
+                <div class="formGroup">
+                    <label for="descripcion">Descripcion personaje:</label><!--Titulo-->
+                    <textarea name="" id="descripcion" cols="30" rows="10"></textarea><!--Recuadro para describir-->
+                </div>
+                <div class="formGroup">
+                    <label for="color">Color:</label><!--Titulo-->
+                    <select name="#" id="color"><!--Para barra desplegable de opciones-->
+                        <option value="">Seleccion...</option><!--value es lo que se guarda en la base de datos y dentro del option es la opcion que elige el usuario-->
+                        <option value="Negro">Negro</option>
+                        <option value="Rojo">Rojo</option>
+                        <option value="Morado">Morado</option>
+                        <option value="Naranja">Naranja</option>
+                        <option value="Violeta">Violeta</option>
+                    </select><!--Campo-->
+                </div>              
+            </form>
+
+            <button class="crear" onclick="capturarDatos()">CREAR AVATAR</button>
+
+        </div>
+        <div class="contAvatar" id="contAvatar">
+            <img id="imagen" src="../figurasGeometricas/img/user.png" alt="imagen usuario">
+            <h3 id="mnombres">NOMBRE:</h3>
+            <p id="mdescripcion">Descripcion:</p>
+            <p id="medad">EDAD:</p>
+            <p id="mfecha">FECHA DE NACIMIENTO:</p>
+            <p id="mgenero">GENERO:</p>
+            <p id="memail">EMAIL:</p>
+        </div>
+    </section>
+
+    <a class="btn-nav" href="index.html">PROYECTO CAPTURAR DATOS</a>
+
+    <script src="js/function.js"></script>
+
+</body>
+</html>
